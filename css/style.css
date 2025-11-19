@@ -1,7 +1,8 @@
 /* БАЗОВІ СТИЛІ  */
 :root {
    --primary-color: #70432f;
-   --background-light: #e8dfd0;
+   --background-light: #f3e4cb;
+   /*#e8dfd0*/
    --background-accent: #ede7d9;
    --text-color: #333;
 }
