@@ -1,0 +1,508 @@
+/* БАЗОВІ СТИЛІ  */
+:root {
+   --primary-color: #70432f;
+   --background-light: #e8dfd0;
+   --background-accent: #ede7d9;
+   --text-color: #333;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   margin: 0;
+   font-family: "Rounded Mplus 1c", sans-serif;
+   font-weight: 700; /* жирність Bold для тексту */
+   color: var(--text-color);
+   background-color: var(--background-light);
+}
+
+
+
+/* ГОЛОВНИЙ КОНТЕЙНЕР ДЛЯ КОНТЕНТУ  */
+.container {
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 0 80px; /* Відступи по 80px  */
+   box-sizing: border-box;
+}
+
+/*  HEADER  */
+.header {
+   background-color: var(--background-accent); /* Фон на 100%  */
+   padding: 5px 0;
+}
+
+.header .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo img {
+   height: 70px; 
+   width: auto;
+   display: block;
+}
+
+
+/* .logo {
+   font-weight: bold;
+   font-size: 24px;
+   text-decoration: none;
+   color: var(--primary-color);
+} */
+
+.navigation a {
+   margin: 0 15px;
+   text-decoration: none;
+   color: var(--text-color);
+}
+
+.btn {
+   padding: 10px 20px;
+   border: 2px solid var(--primary-color);
+   background-color: transparent;
+   color: var(--primary-color);
+   cursor: pointer;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+.btn-primary {
+   background-color: var(--primary-color);
+   color: white;
+}
+.btn:hover { 
+    background-color: #a06a4b; 
+}
+
+
+/* HERO SECTION  */
+.hero {
+   background-image: url("../image/header.png"); 
+   background-size: cover;        
+   background-position: center;   
+   background-repeat: no-repeat;  
+   min-height: 500px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+}
+
+
+.hero h1 {
+   font-size: 60px;
+   color: black;
+}
+
+.hero p {
+   margin-bottom: 30px;
+   color: black;
+}
+
+/* ЗАГАЛЬНІ СТИЛІ СЕКЦІЙ */
+section {
+   padding: 50px 0;
+}
+
+.faq h2 {
+   margin-bottom: 0;
+}
+
+.content-grid {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+}
+
+.content-grid > div {
+   flex: 1;
+}
+
+.image-placeholder {
+   width: 100%;
+   height: 450px; 
+   /* border-radius: 10px; */
+   overflow: hidden; 
+}
+
+.image-placeholder img {
+   width: 80%;
+   height: 100%;
+   object-fit: cover; 
+   display: block;
+   border-radius: 10px; 
+}
+
+
+
+/*  ABOUT & TOP SALES SECTIONS  */
+.top-sales {
+   background-color: var(--background-accent); 
+   border-radius: 10px;
+}
+
+.top-sales .content-grid {
+   flex-direction: row-reverse;
+}
+
+
+/* ASSORTMENT SECTION  */
+.assortment {
+   background-color: #70432f; 
+   color: white; 
+   text-align: center;
+   border-radius: 10px; 
+   
+}
+
+.hours {
+   margin-top: 20px;
+}
+
+.hours ul {
+   margin-left: 20px;
+}
+
+.hours li {
+   margin-top: 5px;
+}
+
+.top-sales-text h3 {
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+
+.top-sales-text p {
+   margin-bottom: 20px;
+}
+
+.product-card {
+   background-color: white;
+   color: var(--text-color); 
+   border-radius: 15px;
+   padding: 15px;
+   width: 300px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assortment-grid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 30px;
+   margin-top: 40px;
+}
+
+.product-placeholder {
+   height: 200px; 
+   border-radius: 10px;
+   overflow: hidden; 
+   background-color: #d2b48c; 
+}
+
+.product-placeholder img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+   display: block;
+}
+
+
+.price {
+   font-weight: bold;
+   color: var(--primary-color);
+   margin-left: 10px;
+}
+
+/*  FAQ SECTION  */
+.faq-item {
+   border-bottom: 1px solid #ccc;
+   margin-top: 30px;
+}
+
+
+
+/* FOOTER */
+.footer {
+   background-color: #70432f; 
+   color: #f0e6d2;
+   padding: 50px 0;
+}
+
+
+.footer-grid {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 30px;
+}
+
+.footer-item {
+   flex: 1;
+}
+
+.footer-logo-placeholder {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-logo {
+   height: 180px; 
+   width: auto;
+   display: block;
+}
+
+
+
+
+.footer-links a {
+   display: block;
+   color: #f0e6d2;
+   text-decoration: none;
+   margin-bottom: 10px;
+   position: relative;
+   padding-left: 15px;
+}
+
+.footer-links a::before {
+   content: "·";
+   position: absolute;
+   left: 0;
+   font-size: 20px;
+   line-height: 1;
+}
+
+.footer-social p,
+.footer-contacts p {
+   margin: 0 0 10px 0;
+}
+
+.social-icons {
+   display: flex;
+   gap: 15px;
+}
+
+.social-icons a {
+   border: 1px solid #f0e6d2;
+   text-decoration: none;
+   color: #fff;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+.header__mobile-menu {
+    display: none; /* Приховано на десктопі */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001; 
+}
+
+.header__mobile-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-accent);
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+}
+
+
+.mobile-menu.mobile-menu--active {
+    right: 0;
+}
+
+.mobile-menu__item {
+    font-size: 24px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mobile-menu__cta {
+    margin-top: 20px;
+}
+
+/* --- Планшети (до 992px) --- */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 40px; 
+    }
+
+    .assortment-grid {
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 320px; 
+    }
+
+    .footer-grid {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* --- Мобільні (до 768px) --- */
+@media (max-width: 768px) {
+    
+    
+    .header .container {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        gap: 0; 
+    }
+
+    
+    .navigation.desktop-only,
+    .btn-primary.desktop-only {
+        display: none;
+    }
+
+    
+    .header__mobile-menu {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 42px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+
+    /* About & Top Sales */
+    .content-grid,
+    .top-sales .content-grid {
+        flex-direction: column; 
+        gap: 25px;
+    }
+
+    .top-sales-text {
+        text-align: center; 
+    }
+
+     
+    .about .image-placeholder,
+    .top-sales .image-placeholder {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .image-placeholder img,
+    .top-sales .image-placeholder img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-placeholder {
+        height: 300px;
+    }
+    
+    /* Assortment */
+    .assortment-grid {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .product-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* FAQ */
+    .faq-item {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    /* Footer */
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    
+    .footer-links {
+        display: none;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-logo {
+        height: 120px;
+    }
+}
+
+/* --- Маленькі мобільні (до 480px) --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px; 
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}

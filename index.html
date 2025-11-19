@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home Sweet Bakery</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@700&display=swap" rel="stylesheet" />
+   </head>
+   <body>
+      <header class="header">
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="image/logo.png" alt="Bakery Logo">
+        </a>
+        
+<nav class="navigation desktop-only">
+            <a href="#about">Про нас</a>
+            <a href="#top-sales">Топ продажу</a>
+            <a href="#assortment">Асортимент</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+        
+<button class="btn btn-primary desktop-only">Замовити</button>
+
+        
+<button class="header__mobile-menu" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>                                                                                        
+    </div>
+</header>
+
+      <div class="mobile-menu" id="mobileMenu">
+         <a href="#about" class="mobile-menu__item" onclick="toggleMobileMenu()">Про нас</a>
+         <a href="#top-sales" class="mobile-menu__item" onclick="toggleMobileMenu()">Топ продажу</a>
+         <a href="#assortment" class="mobile-menu__item" onclick="toggleMobileMenu()">Асортимент</a>
+         <a href="#faq" class="mobile-menu__item" onclick="toggleMobileMenu()">FAQ</a>
+         <a href="#contacts" class="mobile-menu__item" onclick="toggleMobileMenu()">Контакти</a>
+      
+         <div class="mobile-menu__cta">
+         <button class="btn btn-primary">Замовити</button>
+         </div>
+      </div>
+      
+      <main>
+         <section class="hero">
+            <h1>Випічка як мистецтво</h1>
+            <p>Мафіни, тарти й тістечка — ручна робота та натхнення</p>
+            <button class="btn btn-primary">Замовити</button>
+         </section>
+
+         <section id="about" class="about">
+            <div class="container content-grid">
+               <div class="image-placeholder">
+                <img src="image/man.png" alt="Пекарня" class="placeholder-image">
+               </div>
+
+               <div class="about-text">
+                  <h2>Home Sweet Bakery</h2>
+                  <p>
+                     Ми віримо, що випічка — це більше, ніж їжа. Це аромат ранку, тепло родинних зустрічей і маленьке задоволення упродовж дня. У
+                     нашій пекарні ми поєднуємо традиційні рецепти з натхненням сучасності, щоб кожен круасан, мафін чи тарт дарував вам усмішку.
+                  </p>
+                  <div class="hours">
+                     <h2>Години роботи:</h2>
+                     <ul>
+                        <li><strong>Понеділок – П’ятниця:</strong> 09:00 – 16:00</li>
+                        <li><strong>Субота – Неділя:</strong> 10:00 – 19:00</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section id="top-sales" class="top-sales">
+            <div class="container content-grid">
+               <div class="top-sales-text">
+                  <h2>Топ продажу</h2>
+                  <h3>Медовий пряник з корицею</h3>
+                  <p>Ароматний м'який пряник, приготований на натуральному меді, з додаванням кориці та духмяних спецій.</p>
+                  <button class="btn btn-primary">Замовити</button>
+               </div>
+               <div class="image-placeholder">
+                <img src="image/top.png" alt="Пекарня" class="placeholder-image">
+               </div>
+            </div>
+         </section>
+
+         <section id="assortment" class="assortment">
+           <div class="container">
+            <h2>Асортимент</h2>
+           <div class="assortment-grid">
+         
+           <div class="product-card">
+            <div class="product-placeholder">
+               <img src="image/tart.jpg" alt="Тарталетки">
+            </div>
+            <p>Тарталетки <span class="price">600 грн</span></p>
+         </div>
+
+         <div class="product-card">
+            <div class="product-placeholder">
+               <img src="image/shy.jpg" alt="Шу">
+            </div>
+            <p>Шу <span class="price">350 грн</span></p>
+         </div>
+
+         <div class="product-card">
+            <div class="product-placeholder">
+               <img src="image/brauni.jpg" alt="Брауні">
+            </div>
+            <p>Брауні <span class="price">370 грн</span></p>
+         </div>
+
+         <div class="product-card">
+            <div class="product-placeholder">
+               <img src="image/trubochku.jpg" alt="Трубочки">
+            </div>
+            <p>Трубочки <span class="price">530 грн</span></p>
+         </div>
+
+         <div class="product-card">
+            <div class="product-placeholder">
+               <img src="image/cuplish.jpg" alt="Капкейки">
+            </div>
+            <p>Капкейки <span class="price">450 грн</span></p>
+         </div>
+
+         <div class="product-card">
+            <div class="product-placeholder">
+               <img src="image/gorishki.jpg" alt="Горішки">
+            </div>
+            <p>Горішки <span class="price">550 грн</span></p>
+         </div>
+
+      </div>
+   </div>
+</section>
+
+
+         <section id="faq" class="faq">
+            <div class="container">
+               <h2>Найчастіші запитання</h2>
+               <div class="faq-item">
+                  <h4>Чи ви печете все самостійно?</h4>
+                  <p>Так, уся наша випічка виготовляється власноруч у пекарні з використанням натуральних інгредієнтів без штучних домішок.</p>
+               </div>
+               <div class="faq-item">
+                  <h4>Чи можна зробити попереднє замовлення?</h4>
+                  <p>Звісно! Ви можете оформити замовлення онлайн або телефоном. Ми приготуємо випічку саме до потрібного часу.</p>
+               </div>
+               <div class="faq-item">
+                  <h4>Чи є у вас безглютенова або дієтична випічка?</h4>
+                  <p>
+                     Так, ми пропонуємо кілька позицій без глютену та зменшеним вмістом цукру. Актуальне меню уточнюйте у нас або переглядайте на
+                     сайті.
+                  </p>
+               </div>
+               <div class="faq-item">
+                  <h4>Чи можна замовити випічку для свят чи корпоративів?</h4>
+                  <p>Так, ми готуємо індивідуальні замовлення на дні народження, весілля, вечірки чи офісні заходи.</p>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer id="contacts" class="footer">
+   <div class="container footer-grid">
+      <div class="footer-item footer-logo-placeholder">
+         <img src="image/logo.png" alt="Bakery Logo" class="footer-logo">
+      </div>
+
+            <div class="footer-item footer-links">
+               <a href="#about">Про нас</a>
+               <a href="#top-sales">Топ продажу</a>
+               <a href="#assortment">Асортимент</a>
+               <a href="#faq">FAQ</a>
+               <a href="#contacts">Контакти</a>
+            </div>
+
+            <div class="footer-item footer-social">
+               <p><strong>Ми у соцмережах</strong></p>
+               <div class="social-icons">
+                  <a href="#">f</a>
+                  <a href="#">ig</a>
+                  <a href="#">tw</a>
+               </div>
+            </div>
+
+            <div class="footer-item footer-contacts">
+               <p>+38 (067) 64 38 883</p>
+               <p>m.bakery@gmail.com</p>
+            </div>
+         </div>
+      </footer>
+               <script>
+         function toggleMobileMenu() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("mobile-menu--active");
+         }
+      </script>
+
+
+   </body>
+</html>
